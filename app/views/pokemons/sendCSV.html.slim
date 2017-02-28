@@ -1,0 +1,5 @@
+h1 pokemons#csv
+
+= form_tag("/csv",{:multipart => true , :method => :post}) do
+    = file_field_tag :file, :accept => 'text/csv'
+    = submit_tag "hoge"

@@ -1,0 +1,20 @@
+doctype html
+html
+    head
+        = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track'=> true
+        = javascript_include_tag 'application', 'data-turbolinks-track'=> true
+        = csrf_meta_tags
+
+    body
+        nav class = ["navbar","navbar-default"]
+            .container
+                .nav-header
+                    a.navbar-brand  Pokemon
+                .navbar-right
+                    ul class = ["nav","navbar-nav"]
+                        li
+                            a href = "/" Pokemon
+                        li
+                            a href = "/csv" CSV
+        div.container
+            = yield

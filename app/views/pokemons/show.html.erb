@@ -1,0 +1,74 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Number:</strong>
+  <%= @pokemon.number %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @pokemon.name %>
+</p>
+
+<p>
+  <strong>Type1:</strong>
+  <%= @pokemon.type1 %>
+</p>
+
+<p>
+  <strong>Type2:</strong>
+  <%= @pokemon.type2 %>
+</p>
+
+<p>
+  <strong>Ability1:</strong>
+  <%= @pokemon.ability1 %>
+</p>
+
+<p>
+  <strong>Ability2:</strong>
+  <%= @pokemon.ability2 %>
+</p>
+
+<p>
+  <strong>Hidden ability:</strong>
+  <%= @pokemon.hidden_ability %>
+</p>
+
+<p>
+  <strong>Hp:</strong>
+  <%= @pokemon.hp %>
+</p>
+
+<p>
+  <strong>Attack:</strong>
+  <%= @pokemon.attack %>
+</p>
+
+<p>
+  <strong>Defence:</strong>
+  <%= @pokemon.defence %>
+</p>
+
+<p>
+  <strong>Sp attack:</strong>
+  <%= @pokemon.sp_attack %>
+</p>
+
+<p>
+  <strong>Sp defence:</strong>
+  <%= @pokemon.sp_defence %>
+</p>
+
+<p>
+  <strong>Speed:</strong>
+  <%= @pokemon.speed %>
+</p>
+
+<p>
+  <strong>Total:</strong>
+  <%= @pokemon.total %>
+</p>
+
+<%= link_to 'Edit', edit_pokemon_path(@pokemon) %> |
+<%= link_to 'Back', pokemons_path %>
