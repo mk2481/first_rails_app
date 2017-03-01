@@ -1,0 +1,10 @@
+PRAGMA foreign_keys=OFF;
+BEGIN TRANSACTION;
+CREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY);
+INSERT INTO "schema_migrations" VALUES('20170228054636');
+CREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" timestamp NOT NULL);
+INSERT INTO "ar_internal_metadata" VALUES('environment','development','2017-02-28 05:49:15.527451','2017-02-28 05:49:15.527451');
+CREATE TABLE "pokemons" ("id" SERIAL PRIMARY KEY AUTOINCREMENT NOT NULL, "number" varchar, "name" varchar, "type1" varchar, "type2" varchar, "ability1" varchar, "ability2" varchar, "hidden_ability" varchar, "hp" integer, "attack" integer, "defence" integer, "sp_attack" integer, "sp_defence" integer, "speed" integer, "total" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL);
+DELETE FROM sqlite_sequence;
+INSERT INTO "sqlite_sequence" VALUES('pokemons',10908);
+COMMIT;
